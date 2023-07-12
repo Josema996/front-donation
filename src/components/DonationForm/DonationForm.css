@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://img.freepik.com/vector-gratis/barra-musica-interior-vacio-dibujos-animados-pub-letrero-iluminado_1441-3501.jpg?w=996&t=st=1689120420~exp=1689121020~hmac=81be018cb4d19064e49cbc6d9d69be9f837b1d73650c8c262ac0ac239fa5537f");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffcc00;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #ffcc00;
+    color: #2d2d2d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #da9a44;
+    color: #fff;
+}
+
+input[type="number"] {
+    font-size: 1.2em;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffcc00;
+    background-color: #fff;
+    color: #2d2d2d;
+}
+
+.music-controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .music-label {
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: #da9a44;
+    color: #2d2d2d;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  input[type="range"] {
+    width: 100px;
+  }
