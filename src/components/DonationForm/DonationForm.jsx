@@ -11,7 +11,7 @@ const DonationForm = () => {
     const [volume, setVolume] = useState(50);
 
     const [preferenceId, setPreferenceId] = useState(null);
-    initMercadoPago('APP_USR-d5eb4bba-7d6b-4fbd-af06-466741029ded');
+    initMercadoPago('APP_USR-abd35d05-02ef-40c3-a878-84817f1c98a2');
 
     const audioRef = useRef(null);
 
@@ -39,7 +39,7 @@ const DonationForm = () => {
     //mercado pago functions
     const createPreferences = async () => {
         try{
-            const response = await axios.post("https://server-final-donation.vercel.app/" , {
+            const response = await axios.post("http://localhost:8080/create_preference" , {
                 description: "Gracias por la birra!",
                 price: totalAmount,
                 quantity: 1,
