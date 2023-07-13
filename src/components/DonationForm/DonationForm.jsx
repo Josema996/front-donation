@@ -39,7 +39,7 @@ const DonationForm = () => {
     //mercado pago functions
     const createPreferences = async () => {
         try{
-            const response = await axios.post("http://localhost:8080/create_preference" , {
+            const response = await axios.post("https://server-donation-9ayafdneq-josema996.vercel.app/create_preference" , {
                 description: "Gracias por la birra!",
                 price: totalAmount,
                 quantity: 1,
